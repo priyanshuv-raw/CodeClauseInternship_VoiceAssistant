@@ -38,7 +38,7 @@ def say(text):
     os.system(f"say {text}")
 
 if __name__=='__main__':
-    say("I am here, what is it?")
+    say("I am here, what do you want to to do today?")
     x = 1
     while x:
         print("Listening...")
@@ -54,7 +54,7 @@ if __name__=='__main__':
         if "Exit".lower() in query.lower():
             x = 0
         say(query)
-        if "hello".lower() in query.lower():
+        if "Hey GPT".lower() in query.lower():
             ai(query)
             file_object = open("hello.txt", "r")
             contents ="GPT"+ file_object.read() 
